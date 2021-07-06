@@ -1,0 +1,132 @@
+% ! UTF-8
+% !TS xelatex
+
+% \documentclass[字號, 紙張]{article}
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[utf8]{ctex}  % 中文支持
+\usepackage{geometry}  % 頁面佈局
+
+\usepackage{graphicx}  % 添加圖像
+% \graphicspath{ {images/} }  % 圖像路徑{images/}
+% 添加圖像 ‘univer’
+% \includegraphics{universe}
+
+
+下面是封面信息
+
+\title{First document}  % 標題
+\author{Hubert Farnsworth \thanks{funded by the Overleaf team}}  % 作者
+% 感謝
+
+\date{February 2014}  % 時間
+
+
+% 下邊是文章正文
+\begin{document}
+
+\maketitle  % 標題
+
+\tableofcontents  % 目錄
+
+
+We have now added a title, author and date to our first \LaTeX{} document!
+
+% 摘要
+\begin{abstract}
+This is a simple paragraph at the beginning of the 
+document. A brief introduction about the main subject.
+\end{abstract}
+
+
+
+% 添加圖像 univer
+% \includegraphics{universe}
+
+% 圖表
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.25\textwidth]{mesh}
+    \caption{a nice plot}
+    \label{fig:mesh1}
+\end{figure}
+
+As you can see in the figure \ref{fig:mesh1}, the 
+function grows near 0. Also, in the page \pageref{fig:mesh1} 
+is the same example.
+
+% 無序列表
+\begin{itemize}
+  \item The individual entries are indicated with a black dot, a so-called bullet.
+  \item The text in the entries may be of any length.
+\end{itemize}
+
+% 有序列表
+\begin{enumerate}
+  \item This is the first entry in our list
+  \item The list numbers increase with each entry we add
+\end{enumerate}
+
+
+
+
+\chapter{First Chapter}
+
+\section{Introduction}
+
+This is the first section.
+
+Lorem  ipsum  dolor  sit  amet,  consectetuer  adipiscing  
+elit.   Etiam  lobortisfacilisis sem.  Nullam nec mi et 
+neque pharetra sollicitudin.  Praesent imperdietmi nec ante. 
+Donec ullamcorper, felis non sodales...
+
+\section{Second Section}
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
+Etiam lobortis facilisissem.  Nullam nec mi et neque pharetra 
+sollicitudin.  Praesent imperdiet mi necante...
+
+\subsection{First Subsection}
+Praesent imperdietmi nec ante. Donec ullamcorper, felis non sodales...
+
+\section*{Unnumbered Section}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
+Etiam lobortis facilisissem
+
+
+% -1 	\part{part}
+% 0 	\chapter{chapter}
+% 1 	\section{section}
+% 2 	\subsection{subsection}
+% 3 	\subsubsection{subsubsection}
+% 4 	\paragraph{paragraph}
+% 5 	\subparagraph{subparagraph}
+
+
+% 表格
+\begin{center}
+\begin{tabular}{ c c c }
+ cell1 & cell2 & cell3 \\ 
+ cell4 & cell5 & cell6 \\  
+ cell7 & cell8 & cell9    
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ cell1 & cell2 & cell3 \\ 
+ cell4 & cell5 & cell6 \\ 
+ cell7 & cell8 & cell9 \\ 
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+
+
+
+\end{document}
